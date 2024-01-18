@@ -11,10 +11,18 @@ The **zarf format** is meant to be both programmer-legible and programmer-friend
 ## Extension
 
 Although **zarf** does _not_ require an extension (since it has magic-bytes), if a file-extension is used for a **zarf** file, it should use the `.zarf` extension (on systems where file-extensions are necessary).
+For example:
+
+`stuff.zarf`
 
 ## MIME Type
 
 Although **zarf** does _not_ require a MIME-type (since it has magic-bytes), f a MIME-type is used for a **zarf** file, it should use the `multipart/zarf` extension (on systems where file-extensions are necessary).
+For example:
+
+```
+Content-Type: multipart/zarf
+```
 
 ## Name
 
