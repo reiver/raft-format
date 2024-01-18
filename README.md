@@ -6,6 +6,7 @@ The **zarf format** is an **archive format** and **container format** that can c
 The **zarf format** is similar to other **archive formats**, such as the  **ar format**, the **cpio format**, the **shar format**, the **tar format**, and the **WARC format** — but is designed to be easier to understand and implement than all of the other **archive formats** and **container formats**.
 
 In fact, one of the main points of the  **zarf format** existing, is that it was designed to be easy to understand and implement for programmers.
+The **zarf format** is meant to be both programmer-legible and programmer-friendly.
 
 ## Extension
 
