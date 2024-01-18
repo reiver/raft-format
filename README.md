@@ -19,6 +19,5 @@ Although **zarf** does _not_ require a MIME-type (since it has magic-bytes), f a
 
 The name “zarf” has 2 meanings:
 
-* it is an acronym “**Zarf** **AR**chive **F**ormat”, and
+* it is an acronym “**Z**arf **AR**chive **F**ormat”, and
 * it also happens to be the Persian word for ‘container’.
-
