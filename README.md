@@ -100,4 +100,38 @@ figure3.png = ...
 
 The same as a **zarf** file would be:
 
+```
+ZARF/1
+
+readme.xhtml
+14
+...
+
+LICENSE
+1053
+...
+
+images/logo.png
+17365
+...
+
+images/banner.png
+5550
+...
+
+images/figures/figure1.jpeg
+132441
+...
+
+images/figures/figure2.jpeg
+814532
+...
+
+images/figures/figure3.png
+28389
+...
+```
+
+(And again note that we are using `"..."` in the examples because we aren't listing the contents of the files.)
+
 
