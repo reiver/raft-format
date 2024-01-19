@@ -30,3 +30,74 @@ The name “zarf” has 2 meanings:
 
 * it is an acronym “**Z**arf **AR**chive **F**ormat”, and
 * it also happens to be a Persian word for ‘container’.
+
+## File Format
+
+A **zarf** file is a single file that contain multiple other files.
+
+Or said more formally, the **zarf format** is an **archive format** and **container format** that can combine multiple files into a single aggregate file.
+
+One of the main points of the  **zarf format** is that it was designed to be easy to understand and implement for programmers.
+The **zarf format** is meant to be both programmer-legible and programmer-friendly.
+
+The common way to store and think about **multiple files** is as part of a directory system.
+For example:
+
+* readme.xhtml
+* LICENSE
+* images/logo.png
+* images/banner.png
+* images/figures/figure1.jpeg
+* images/figures/figure2.jpeg
+* images/figures/figure3.png
+
+This type of thing (and the files' contents) is what is inside of a **zarf** file.
+
+One way of thinking about this is that, it is a **hierarchical key-value format** similar to (**but not the same as**) JSON, INI, and other similar formats.
+
+For example, in JSON the preceding file system would probably look like:
+
+```json
+{
+	"readme.xhtml": "...",
+	"LICENSE": "...",
+	"images": {
+		"logo.png": "...",
+		"banner.png": "...",
+		"figures": {
+			"figure1.jpeg": "...",
+			"figure2.jpeg": "...",
+			"figure3.png": "..."
+		}
+	}
+}
+```
+
+(Note that we are using `"..."` in the examples because we aren't listing the contents of the files.)
+
+Also for example, in INI the preceding file system would look like:
+```ini
+readme.xhtml = ...
+
+LICENSE = ...
+
+[images]
+
+logo.png = ...
+
+banner.png = ...
+
+[images.figures]
+
+figure1.jpeg = ...
+
+figure2.jpeg = ...
+
+figure3.png = ...
+```
+
+(Again note that we are using `"..."` in the examples because we aren't listing the contents of the files.)
+
+The same as a **zarf** file would be:
+
+
