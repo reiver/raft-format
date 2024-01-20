@@ -239,7 +239,7 @@ Or in hexadecimal this would be:
 For now the only version of the **zarf format** is version 1.
 So you should just look for the "1" character (i.e., hexadecimal `0x31`).
 
-### Writing The First and Second Lines
+### Writing The First And Second Lines
 
 If you are creating a **zarf** file, then you can create the first and second lines of a **zarf** file with code like the following —
 
