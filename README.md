@@ -127,6 +127,8 @@ figure3.png = ...
 
 (Again note that we are using `"..."` in the examples because we aren't listing the contents of the files.)
 
+### Example
+
 The same as a **zarf** file would be:
 
 ```
@@ -194,6 +196,45 @@ images/logo.svg
 ```
 
 Now that we have a real example of a **zarf** file, let's look at the structure of it.
+
+### Magic-Bytes
+
+You can tell if a file is a **zarf** file or not just by looking at the first 5 bytes of at the beginning of the file.
+
+For a file to be a **zarf** file is MUST begin with the byte bytes:
+
+```go
+"ZARF/"
+```
+
+I.e., in hexadecimal this would be:
+```
+0x5A 0x41 0x52 0x46 0x2F
+```
+
+### Version
+
+What comes immediately after that is the version.
+
+So with this first line of a **zarf** file:
+
+```go
+"ZARF/1"
+```
+
+What comes immediately after the `"ZARF/"` is"
+
+```go
+"1"
+```
+
+Or in hexadecimal this would be:
+```
+0x31
+```
+
+For now the only version of the **zarf format** is version 1.
+So you should just look for the "1" character (i.e., hexadecimal `0x31`).
 
 
 
