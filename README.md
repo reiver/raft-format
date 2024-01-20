@@ -166,7 +166,7 @@ images/figures/figure3.png
 (And again note that we are using `"..."` in the examples because we aren't listing the contents of the files.)
 
 Now let's look at a **zarf** file that actually includes each file's contents (instead of `"..."`) so we can see a real example.
-We are going to use a different directory structure or this example though.
+We are going to use a different directory structure for this example though.
 We will use this one:
 
 * README.md
