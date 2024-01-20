@@ -195,6 +195,9 @@ images/logo.svg
 </svg>
 ```
 
+It is a simple format.
+You might even be able to figure out the format just by looking at this (and other) examples.
+
 Now that we have a real example of a **zarf** file, let's look at the structure of it.
 
 ### Magic-Bytes
