@@ -8,6 +8,29 @@ The **zarf format** is similar to other **archive formats**, such as the  **ar f
 In fact, one of the main points of the  **zarf format** existing, is that it was designed to be easy to understand and implement for programmers.
 The **zarf format** is meant to be both programmer-legible and programmer-friendly.
 
+## Motivation
+
+There are many many use-cases where multiple files are combined into a single file.
+For example:
+
+* backups,
+* eBooks,
+* file-systems,
+* image galleries,
+* journals,
+* music albums,
+* photo albums,
+* software packages,
+* website archives,
+* _etc_.
+
+Many of these use-cases either use the **cpio format**, the **rar format**, **tar forat**, or the **zip format**.
+
+While all of these formats work acceptably as an **archive format** and a **container format** — none of them are **easy** for a programmer of 3 to 10 years of experience to implement a encoder and a decoder for it.
+Also none of these supports a ‘**view-source**’ learning style (as none of them is text based, for some definition of "text").
+
+That is why the **zarf format** exists.
+
 ## Extension
 
 Although **zarf** does _not_ require an extension (since it has magic-bytes), if a file-extension is used for a **zarf** file, it should use the `.zarf` extension (on systems where file-extensions are necessary).
