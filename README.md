@@ -31,6 +31,12 @@ Also none of these supports a ‘**view-source**’ learning style (as none of t
 
 That is why the **zarf format** exists.
 
+The **zarf format** is a text-based format (in the same way HTTP/1.1 protocol is a text-based), so a programmer can look at **zarf** files (i.e., ‘**view-source**’) to understand it.
+
+The **zarf format** is simple to create, thus making it easy to create an encoder.
+
+The **zarf format** is simple to parse, thus making it easy to create a decoder.
+
 ## Extension
 
 Although **zarf** does _not_ require an extension (since it has magic-bytes), if a file-extension is used for a **zarf** file, it should use the `.zarf` extension (on systems where file-extensions are necessary).
