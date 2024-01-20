@@ -48,7 +48,7 @@ The **zarf** file also specifies the size of each of these embedded files.
 | `article.txt`     | 1572      |
 | `images/logo.svg` | 1819      |
 
-The content of the embedded file named `README.md is only 12 bytes long, and is:
+The content of the embedded file named `README.md` is only 12 bytes long, and is:
 
 `Hello world!`
 
