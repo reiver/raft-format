@@ -55,7 +55,7 @@ Content-Type: multipart/zarf
 
 ## Name
 
-The name “zarf” has 2 meanings:
+The name “**zarf**” has 2 meanings:
 
 * it is an acronym “**Z**arf **AR**chive **F**ormat”, and
 * it also happens to be a Persian word for ‘container’.
