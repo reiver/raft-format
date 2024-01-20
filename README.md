@@ -48,6 +48,17 @@ The **zarf** file also specifies the size of each of these embedded files.
 | `article.txt`     | 1572      |
 | `images/logo.svg` | 1819      |
 
+The content of the embedded file named `README.md is only 12 bytes, and is:
+
+`Hello world!`
+
+The content of the embedded file named `article.txt`, and is:
+```
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum velit laoreet id donec ultrices tincidunt arcu non sodales. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Cursus turpis massa tincidunt dui ut. Diam vel quam elementum pulvinar etiam non quam. Gravida neque convallis a cras semper. Ornare massa eget egestas purus. Tempor id eu nisl nunc mi ipsum faucibus vitae aliquet. Fames ac turpis egestas maecenas pharetra. Arcu bibendum at varius vel pharetra vel turpis nunc. Integer quis auctor elit sed vulputate mi. Eget velit aliquet sagittis id consectetur purus ut faucibus. Sapien pellentesque habitant morbi tristique senectus.
+
+Lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor. Quis commodo odio aenean sed adipiscing. Commodo quis imperdiet massa tincidunt nunc. Quam quisque id diam vel quam elementum pulvinar etiam non. Elit ut aliquam purus sit amet luctus venenatis lectus. Sit amet mauris commodo quis. Placerat vestibulum lectus mauris ultrices eros in. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula. Augue interdum velit euismod in. Tellus pellentesque eu tincidunt tortor. Commodo viverra maecenas accumsan lacus vel facilisis. Venenatis a condimentum vitae sapien pellentesque habitant morbi. Et ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Tellus integer feugiat scelerisque varius. Bibendum enim facilisis gravida neque convallis. Nisl nisi scelerisque eu ultrices vitae auctor eu.
+```
+
 ## Motivation
 
 There are many many use-cases where multiple files are combined into a single file.
