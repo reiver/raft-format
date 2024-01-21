@@ -113,7 +113,7 @@ The **zarf format** is simple to create, thus making it easy to create an encode
 
 The **zarf format** is simple to parse, thus making it easy to create a decoder.
 
-## Extension
+## File Extension
 
 Although **zarf** does _not_ require an extension (since it has magic-bytes), if a file-extension is used for a **zarf** file, it should use the `.zarf` extension (on systems where file-extensions are necessary).
 For example:
