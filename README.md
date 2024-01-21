@@ -8,6 +8,7 @@ If you are _not_ familiar with **archive formats** and **container formats** —
 * eBooks,
 * file-systems,
 * image galleries,
+* ISO optical disc images,
 * journals,
 * music albums,
 * photo albums,
@@ -93,6 +94,7 @@ For example:
 * eBooks,
 * file-systems,
 * image galleries,
+* ISO optical disc images,
 * journals,
 * music albums,
 * photo albums,
@@ -100,7 +102,7 @@ For example:
 * website archives,
 * _etc_.
 
-Many of these use-cases either use the **cpio format**, the **rar format**, **tar format**, or the **zip format**.
+Many of these use-cases either use the **cpio format**, the **rar format**, **tar format**, or the **zip format**, or some other **archive format** or **container format**.
 
 While all of these formats work acceptably as an **archive format** and a **container format** — none of them are **easy** for a programmer of 3 to 10 years of experience to implement a encoder and a decoder for it.
 Also none of these supports a ‘**view-source**’ learning style (as none of them is text based, for some definition of "text").
