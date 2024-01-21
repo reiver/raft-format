@@ -1,9 +1,24 @@
 # zarf archive format
 by [Charles Iliya Krempeaux](http://changelog.ca/)
 
-The **zarf format** is an **archive format** and **container format** that can combine multiple files into a single aggregate file.
+The **zarf format** is a very simple and easy to understand **archive format** and **container format** that can combine multiple files into a single aggregate file.
 
-The **zarf format** is similar to other **archive formats**, such as the  **ar format**, the **cpio format**, the **shar format**, the **tar format**, and the **WARC format** — but is designed to be easier to understand and implement than all of the other **archive formats** and **container formats**.
+If you are _not_ familiar with **archive formats** and **container formats** — they have many use-case:
+* backups,
+* eBooks,
+* file-systems,
+* image galleries,
+* journals,
+* music albums,
+* photo albums,
+* software packages,
+* website archives,
+* _etc_.
+
+Basically, any use-case where you need to combine multiple files into a single aggregate file.
+
+
+The **zarf format** is similar to other **archive formats**, such as the  **ar format**, the **cpio format**, the **shar format**, the **tar format**, and the **WARC format** — but is designed to be easier to understand and implement than most (probably all) of the other **archive formats** and **container formats**.
 
 In fact, one of the main points of the  **zarf format** existing, is that it was designed to be easy to understand and implement for programmers.
 The **zarf format** is meant to be both programmer-legible and programmer-friendly.
