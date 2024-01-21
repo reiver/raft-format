@@ -1,7 +1,7 @@
-# zarf archive format
+# raft archive format
 by [Charles Iliya Krempeaux](http://changelog.ca/)
 
-The **zarf format** is a very simple and easy to understand **archive format** and **container format** that can combine multiple files into a single aggregate file.
+The **raft format** is a very simple and easy to understand **archive format** and **container format** that can combine multiple files into a single aggregate file.
 
 If you are _not_ familiar with **archive formats** and **container formats** — they have many use-case:
 * backups,
@@ -18,17 +18,17 @@ If you are _not_ familiar with **archive formats** and **container formats** —
 Basically, any use-case where you need to combine multiple files into a single aggregate file.
 
 
-The **zarf format** is similar to other **archive formats**, such as the  **ar format**, the **cpio format**, the **shar format**, the **tar format**, and the **WARC format** — but is designed to be easier to understand and implement than most (probably all) of the other **archive formats** and **container formats**.
+The **raft format** is similar to other **archive formats**, such as the  **ar format**, the **cpio format**, the **shar format**, the **tar format**, and the **WARC format** — but is designed to be easier to understand and implement than most (probably all) of the other **archive formats** and **container formats**.
 
-In fact, one of the main points of the  **zarf format** existing, is that it was designed to be easy to understand and implement for programmers.
-The **zarf format** is meant to be both programmer-legible and programmer-friendly.
+In fact, one of the main points of the  **raft format** existing, is that it was designed to be easy to understand and implement for programmers.
+The **raft format** is meant to be both programmer-legible and programmer-friendly.
 
 ## Sample
 
-Here is an example **zarf** file with 3 files embedded in it.
+Here is an example **raft** file with 3 files embedded in it.
 
 ```
-ZARF/1
+RAFT/1
 
 README.md
 12
@@ -49,13 +49,13 @@ images/logo.svg
 
 ```
 
-The files inside of this **zarf** file are named:
+The files inside of this **raft** file are named:
 
 * `README.md`
 * `article.txt`
 * `images/logo.svg`
 
-The **zarf** file also specifies the **file size** of each of these embedded files.
+The **raft** file also specifies the **file size** of each of these embedded files.
 
 | File Name         | File Size |
 |-------------------|-----------|
@@ -105,45 +105,46 @@ Many of these use-cases either use the **cpio format**, the **rar format**, **ta
 While all of these formats work acceptably as an **archive format** and a **container format** — none of them are **easy** for a programmer of 3 to 10 years of experience to implement a encoder and a decoder for it.
 Also none of these supports a ‘**view-source**’ learning style (as none of them is text based, for some definition of "text").
 
-That is why the **zarf format** exists.
+That is why the **raft format** exists.
 
-The **zarf format** is a text-based format (in the same way HTTP/1.1 protocol is a text-based), so a programmer can look at **zarf** files (i.e., ‘**view-source**’) to understand it.
+The **raft format** is a text-based format (in the same way HTTP/1.1 protocol is a text-based), so a programmer can look at **raft** files (i.e., ‘**view-source**’) to understand it.
 
-The **zarf format** is simple to create, thus making it easy to create an encoder.
+The **raft format** is simple to create, thus making it easy to create an encoder.
 
-The **zarf format** is simple to parse, thus making it easy to create a decoder.
+The **raft format** is simple to parse, thus making it easy to create a decoder.
 
 ## File Extension
 
-Although **zarf** does _not_ require an extension (since it has magic-bytes), if a file-extension is used for a **zarf** file, it should use the `.zarf` extension (on systems where file-extensions are necessary).
+Although **raft** does _not_ require an extension (since it has magic-bytes), if a file-extension is used for a **raft** file, it should use the `.raft` extension (on systems where file-extensions are necessary).
 For example:
 
-`stuff.zarf`
+`stuff.raft`
 
 ## MIME Type
 
-Although **zarf** does _not_ require a MIME-type (since it has magic-bytes), if a MIME-type is used for a **zarf** file, it should use the `multipart/zarf` extension (on systems where file-extensions are necessary).
+Although **raft** does _not_ require a MIME-type (since it has magic-bytes), if a MIME-type is used for a **raft** file, it should use the `multipart/raft` extension (on systems where file-extensions are necessary).
 For example:
 
 ```
-Content-Type: multipart/zarf
+Content-Type: multipart/raft
 ```
 
 ## Name
 
-The name “**zarf**” has 2 meanings:
+The name “**raft**” derives from 3 meanings:
 
-* it is a recursive acronym for “**Z**arf **AR**chive **F**ormat”, and
-* it also happens to be a Persian word for ‘container’.
+* it is a recursive acronym for “**R**aft **A**rchive **F**orma**T”**,
+* it is an English noun for a flat-bottomed boat used to **transport things together**, and
+* it also happens to be a Persian stem word for **‘to go**’.
 
 ## File Format
 
-A **zarf** file is a single file that contain multiple other files.
+A **raft** file is a single file that contain multiple other files.
 
-Or said more formally, the **zarf format** is an **archive format** and **container format** that can combine multiple files into a single aggregate file.
+Or said more formally, the **raft format** is an **archive format** and **container format** that can combine multiple files into a single aggregate file.
 
-One of the main points of the  **zarf format** is that it was designed to be easy to understand and implement for programmers.
-The **zarf format** is meant to be both programmer-legible and programmer-friendly.
+One of the main points of the  **raft format** is that it was designed to be easy to understand and implement for programmers.
+The **raft format** is meant to be both programmer-legible and programmer-friendly.
 
 The common way to store and think about **multiple files** is as part of a directory system.
 For example:
@@ -156,7 +157,7 @@ For example:
 * images/figures/figure2.jpeg
 * images/figures/figure3.png
 
-This type of thing (and the files' contents) is what is inside of a **zarf** file.
+This type of thing (and the files' contents) is what is inside of a **raft** file.
 
 One way of thinking about this is that, it is a **hierarchical key-value format** similar to (**but not the same as**) JSON, INI, and other similar formats.
 
@@ -205,10 +206,10 @@ figure3.png = ...
 
 ### Example
 
-The same as a **zarf** file would be:
+The same as a **raft** file would be:
 
 ```
-ZARF/1
+RAFT/1
 
 readme.xhtml
 14
@@ -241,7 +242,7 @@ images/figures/figure3.png
 
 (And again note that we are using `"..."` in the examples because we aren't listing the contents of the files.)
 
-Now let's look at a **zarf** file that actually includes each file's contents (instead of `"..."`) so we can see a real example.
+Now let's look at a **raft** file that actually includes each file's contents (instead of `"..."`) so we can see a real example.
 We are going to use a different directory structure for this example though.
 We will use this one:
 
@@ -249,10 +250,10 @@ We will use this one:
 * article.txt
 * images/logo.svg
 
-And here is the example **zarf** file that includes each of the file's contents (instead of `"..."`):
+And here is the example **raft** file that includes each of the file's contents (instead of `"..."`):
 
 ```
-ZARF/1
+RAFT/1
 
 README.md
 12
@@ -276,16 +277,16 @@ images/logo.svg
 It is a simple format.
 You might even be able to figure out the format just by looking at this (and other) examples.
 
-Now that we have a real example of a **zarf** file, let's look at the structure of it.
+Now that we have a real example of a **raft** file, let's look at the structure of it.
 
 ### Magic-Bytes
 
-You can tell if a file is a **zarf** file or not just by looking at the first 5 bytes of at the beginning of the file.
+You can tell if a file is a **raft** file or not just by looking at the first 5 bytes of at the beginning of the file.
 
-For a file to be a **zarf** file is MUST begin with the byte bytes:
+For a file to be a **raft** file is MUST begin with the byte bytes:
 
 ```go
-"ZARF/"
+"RAFT/"
 ```
 
 I.e., in hexadecimal this would be:
@@ -297,13 +298,13 @@ I.e., in hexadecimal this would be:
 
 What comes immediately after that is the version.
 
-So with this first line of a **zarf** file:
+So with this first line of a **raft** file:
 
 ```go
-"ZARF/1"
+"RAFT/1"
 ```
 
-What comes immediately after the `"ZARF/"` is"
+What comes immediately after the `"RAFT/"` is"
 
 ```go
 "1"
@@ -314,12 +315,12 @@ Or in hexadecimal this would be:
 0x31
 ```
 
-For now the only version of the **zarf format** is version 1.
+For now the only version of the **raft format** is version 1.
 So you should just look for the "1" character (i.e., hexadecimal `0x31`).
 
 ### Writing The First And Second Lines
 
-If you are creating a **zarf** file, then you can create the first and second lines of a **zarf** file with code like the following —
+If you are creating a **raft** file, then you can create the first and second lines of a **raft** file with code like the following —
 
 In the Go programming language, it would look like:
 
@@ -328,7 +329,7 @@ var writer io.Writer = os.Stdout // you can change this from os.Stdout to a file
 
 // ...
 
-fmt.Fprintln(writer, "ZARF/1")
+fmt.Fprintln(writer, "RAFT/1")
 fmt.Fprintln(writer)
 ```
 
